@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/privacy_policy_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/mr_manga_master_bbg"
+        android:gravity="center"
+        android:text="@string/privacy_policy_title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/privacy_policy_title">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/privacy_policy_effective_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mr_manga_master_bbg"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Privacy Policy Effective date: May 17, 2020"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/privacy_policy_page_informs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mr_manga_master_bbg"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Rememory ('us', 'we', or 'our) operates the Rememory mobile application (hereinafter referred to as the 'Service').
+This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. The Privacy Policy for Sound Recognation has been created with the help of Privacy Policy Generator.
+We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions."
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/privacy_policy_effective_date" />
+
+            <TextView
+                android:id="@+id/privacy_policy_definitions_service_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mr_manga_master_bbg"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Definitions Service"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/privacy_policy_page_informs" />
+
+            <TextView
+                android:id="@+id/privacy_policy_definitions_service_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mr_manga_master_bbg"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Service is the Rememory mobile application operated by Rememory."
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/privacy_policy_definitions_service_title" />
+
+            <TextView
+                android:id="@+id/privacy_policy_personal_data_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mr_manga_master_bbg"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Personal Data"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/privacy_policy_definitions_service_text" />
+
+            <TextView
+                android:id="@+id/privacy_policy_personal_data_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mr_manga_master_bbg"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Personal Data means data about a living individual who can be identified from those data (or from those and other information either in our possession or likely to come into our possession)."
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/privacy_policy_personal_data_title" />
+
+            <TextView
+                android:id="@+id/privacy_policy_usage_data_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mr_manga_master_bbg"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Usage Data"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/privacy_policy_personal_data_text" />
+
+            <TextView
+                android:id="@+id/privacy_policy_usage_data_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mr_manga_master_bbg"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Usage Data is data collected automatically either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit)."
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/privacy_policy_usage_data_title" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

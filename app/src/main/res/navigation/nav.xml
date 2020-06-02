@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/main_fragment">
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.tsymbaliuk.rememory.view.MainFragment"
+        android:label="Rememory: Travel the world">
+        <action
+            android:id="@+id/action_mainFragment_to_gameFragment"
+            app:destination="@id/game_fragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/main_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/game_fragment"
+        android:name="com.tsymbaliuk.rememory.view.GameFragment"
+        android:label="GameFragment">
+        <action
+            android:id="@+id/action_gameFragment_to_mainFragment"
+            app:destination="@id/main_fragment" />
+        <action
+            android:id="@+id/action_game_fragment_to_gameOverDialogFragment"
+            app:destination="@id/game_over_dialog_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buy_fragment"
+        android:name="com.tsymbaliuk.rememory.view.BuyFragment"
+        android:label="@string/remove_ad" />
+    <fragment
+        android:id="@+id/setting_fragment"
+        android:name="com.tsymbaliuk.rememory.view.SettingsFragment"
+        android:label="@string/settings" />
+    <dialog
+        android:id="@+id/game_over_dialog_fragment"
+        android:name="com.tsymbaliuk.rememory.view.GameOverDialogFragment"
+        android:label="GameOverDialogFragment" >
+        <action
+            android:id="@+id/action_gameOverDialogFragment_to_main_fragment"
+            app:destination="@id/main_fragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/privacy_fragment"
+        android:name="com.tsymbaliuk.rememory.view.PrivacyFragment"
+        android:label="PrivacyFragment" />
+</navigation>

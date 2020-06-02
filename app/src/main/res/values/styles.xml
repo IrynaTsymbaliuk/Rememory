@@ -1,0 +1,50 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="SplashScreen">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView.PrimarySurface">
+       <item name="fontFamily">@font/mr_manga_master_bbg</item>
+        <item name="itemTextAppearanceActive">@font/mr_manga_master_bbg</item>
+        <item name="itemTextAppearanceInactive">@font/mr_manga_master_bbg</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="ThemeItem" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="layout_constraintCircle">@id/flag</item>
+        <item name="layout_constraintCircleRadius">148dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_width">64dp</item>
+    </style>
+
+    <style name="ScrollingPagerIndicator">
+        <item name="spi_dotColor">@color/colorPrimary</item>
+        <item name="spi_dotSelectedColor">@color/colorPrimaryDark</item>
+        <item name="spi_dotSize">6dp</item>
+        <item name="spi_dotSelectedSize">10dp</item>
+        <item name="spi_dotSpacing">8dp</item>
+        <item name="spi_visibleDotCount">5</item>
+        <item name="spi_visibleDotThreshold">2</item>
+        <item name="spi_looped">false</item>
+    </style>
+
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="Widget.Custom.NavigationView" parent="Widget.Design.NavigationView">
+        <item name="itemIconTint">@android:color/white</item>
+        <item name="itemTextColor">@android:color/white</item>
+    </style>
+
+</resources>

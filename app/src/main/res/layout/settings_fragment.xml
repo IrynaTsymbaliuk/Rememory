@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/question_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open all items at once"
+        app:layout_constraintBottom_toTopOf="@id/question_two"
+        app:layout_constraintEnd_toStartOf="@id/answer_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/answer_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes / No"
+        app:layout_constraintBottom_toBottomOf="@id/question_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/question_one"
+        app:layout_constraintTop_toTopOf="@id/question_one" />
+
+    <TextView
+        android:id="@+id/question_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close all items in the wrong set"
+        app:layout_constraintBottom_toTopOf="@id/question_three"
+        app:layout_constraintEnd_toStartOf="@id/answer_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_one" />
+
+    <TextView
+        android:id="@+id/answer_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes / No"
+        app:layout_constraintBottom_toBottomOf="@id/question_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/question_two"
+        app:layout_constraintTop_toTopOf="@id/question_two" />
+
+    <TextView
+        android:id="@+id/question_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hide found sets"
+        app:layout_constraintBottom_toTopOf="@id/question_four"
+        app:layout_constraintEnd_toStartOf="@id/answer_three"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_two" />
+
+    <TextView
+        android:id="@+id/answer_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes / No"
+        app:layout_constraintBottom_toBottomOf="@id/question_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/question_three"
+        app:layout_constraintTop_toTopOf="@id/question_three" />
+
+    <TextView
+        android:id="@+id/question_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sound"
+        app:layout_constraintBottom_toTopOf="@id/question_five"
+        app:layout_constraintEnd_toStartOf="@id/answer_four"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_three" />
+
+    <TextView
+        android:id="@+id/answer_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On / Off"
+        app:layout_constraintBottom_toBottomOf="@id/question_four"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/question_four"
+        app:layout_constraintTop_toTopOf="@id/question_four" />
+
+    <TextView
+        android:id="@+id/question_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Language"
+        app:layout_constraintBottom_toTopOf="@id/question_six"
+        app:layout_constraintEnd_toStartOf="@id/answer_five"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_four" />
+
+    <TextView
+        android:id="@+id/answer_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English"
+        app:layout_constraintBottom_toBottomOf="@id/question_five"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/question_five"
+        app:layout_constraintTop_toTopOf="@id/question_five" />
+
+    <TextView
+        android:id="@+id/question_six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Theme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/answer_six"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_five" />
+
+    <TextView
+        android:id="@+id/answer_six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light / Dark"
+        app:layout_constraintBottom_toBottomOf="@id/question_six"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/question_six"
+        app:layout_constraintTop_toTopOf="@id/question_six" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

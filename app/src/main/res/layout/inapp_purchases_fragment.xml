@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/description_add_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/mr_manga_master_bbg"
+        android:gravity="center"
+        android:text="@string/remove_all_ads"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/buy_add_free"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/buy_add_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape_rectangle_solid_with_stroke"
+        android:fontFamily="@font/mr_manga_master_bbg"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/buy_for_five_uah_in_year"
+        android:textColor="@color/onColorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/buy_open_all_levels"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description_open_all_levels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/mr_manga_master_bbg"
+        android:gravity="center"
+        android:text="@string/open_all_levels"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/buy_open_all_levels"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/buy_open_all_levels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape_rectangle_solid_with_stroke"
+        android:fontFamily="@font/mr_manga_master_bbg"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/buy_for_five_uah"
+        android:textColor="@color/onColorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buy_add_free" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

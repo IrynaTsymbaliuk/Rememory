@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+   <!-- <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/setting_fragment"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings" />
+
+    </group>
+-->
+    <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/buy_fragment"
+                android:icon="@drawable/ic_buy"
+                android:title="@string/remove_ad" />
+            <item
+                android:id="@+id/achieves_fragment"
+                android:icon="@drawable/ic_awards"
+                android:title="@string/achieves" />
+            <item
+                android:id="@+id/leaderbord_fragment"
+                android:icon="@drawable/ic_leaders_board"
+                android:title="@string/leaders_board" />
+            <item
+                android:id="@+id/share_app"
+                android:icon="@drawable/ic_share"
+                android:state_checked="false"
+                android:title="@string/share_app" />
+            <item
+                android:id="@+id/rate_app"
+                android:icon="@drawable/ic_rate"
+                android:title="@string/rate_app" />
+    </group>
+
+    <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/send_feedback"
+                android:icon="@drawable/ic_send"
+                android:title="@string/send_feedback" />
+            <item
+                android:id="@+id/privacy_fragment"
+                android:icon="@drawable/ic_privacy_policy"
+                android:title="@string/privacy_policy_title" />
+    </group>
+
+</menu>
