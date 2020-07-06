@@ -5,7 +5,7 @@
     app:startDestination="@id/main_fragment">
     <fragment
         android:id="@+id/main_fragment"
-        android:name="com.tsymbaliuk.rememory.view.MainFragment"
+        android:name="com.tsymbaliuk.rememory.level.MainFragment"
         android:label="Rememory: Travel the world">
         <action
             android:id="@+id/action_mainFragment_to_gameFragment"
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/game_fragment"
-        android:name="com.tsymbaliuk.rememory.view.GameFragment"
+        android:name="com.tsymbaliuk.rememory.game.GameFragment"
         android:label="GameFragment">
         <action
             android:id="@+id/action_gameFragment_to_mainFragment"
@@ -27,15 +27,15 @@
     </fragment>
     <fragment
         android:id="@+id/buy_fragment"
-        android:name="com.tsymbaliuk.rememory.view.BuyFragment"
+        android:name="com.tsymbaliuk.rememory.billing.BuyFragment"
         android:label="@string/remove_ad" />
     <fragment
         android:id="@+id/setting_fragment"
-        android:name="com.tsymbaliuk.rememory.view.SettingsFragment"
+        android:name="com.tsymbaliuk.rememory.user.SettingsFragment"
         android:label="@string/settings" />
     <dialog
         android:id="@+id/game_over_dialog_fragment"
-        android:name="com.tsymbaliuk.rememory.view.GameOverDialogFragment"
+        android:name="com.tsymbaliuk.rememory.game.GameOverDialogFragment"
         android:label="GameOverDialogFragment" >
         <action
             android:id="@+id/action_gameOverDialogFragment_to_main_fragment"
@@ -43,6 +43,6 @@
     </dialog>
     <fragment
         android:id="@+id/privacy_fragment"
-        android:name="com.tsymbaliuk.rememory.view.PrivacyFragment"
+        android:name="com.tsymbaliuk.rememory.user.PrivacyFragment"
         android:label="PrivacyFragment" />
 </navigation>

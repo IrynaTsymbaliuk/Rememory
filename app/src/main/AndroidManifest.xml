@@ -21,7 +21,7 @@
         <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false" />
 
         <activity
-            android:name=".view.MainActivity"
+            android:name="com.tsymbaliuk.rememory.MainActivity"
             android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
